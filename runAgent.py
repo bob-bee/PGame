@@ -53,8 +53,6 @@ def run_modification(target_path: str, agent_spec_path: str, task: str):
             master_rules = f.read()
 
     system_context = f"{master_rules}\n\nSPECIFIC MICRO-AGENT INVARIANTS:\n{agent_rules}"
-    
-    # Using single-line definition for safe parsing of user query f-string
     user_query = f"CURRENT FILE CONTENT:\n```\n{current_code}\n```\n\nINSTRUCTION: {task}"
 
     print(f"🤖 Processing change with micro-agent via {OLLAMA_MODEL} on: {target_path}...")
@@ -92,6 +90,13 @@ def run_pipeline():
         target_path="frontend/src/stores/auth.ts",
         agent_spec_path="frontend/src/stores/AuthAgent.md",
         task="Generate a complete Pinia composition-style auth store containing token, user, isAuthenticated, and registration/login actions matching our specifications."
+    )
+
+    # Task 4: Configure cross-platform settings, plugins, and load Axios inside Quasar configuration
+    run_modification(
+        target_path="frontend/quasar.config.ts",
+        agent_spec_path="frontend/QuasarAgent.md",
+        task="Add 'axios' to the boot array and configure the env build block with a dynamic API_URL pointing to process.env.API_URL || 'http://localhost:8000'."
     )
 
     print("🏁 Pipeline run completed. Run your local tests or view frontend assets to verify stability!")

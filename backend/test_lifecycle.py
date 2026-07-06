@@ -1,11 +1,14 @@
-# backend/test_lifecycle.py
 import sys
 import time
 import requests
 
 BASE_URL = "http://localhost:8000"
 
-def run_integration_test():
+def test_integration_lifecycle():
+    """Integration test designed to verify entire thread lifecycle and RBAC.
+    
+    This function name is prefixed with 'test_' so pytest can auto-discover and run it.
+    """
     print("🚀 Starting Political Threads API Integration Test...\n")
     
     # Unique suffixes to avoid DB collision failures on rerun
@@ -59,8 +62,6 @@ def run_integration_test():
     # ----------------------------------------------------
     # 3. MANUALLY SIMULATE ELEVATION TO CONTENDER
     # ----------------------------------------------------
-    # Note: Since the core engine relies on a database state change for the demo 
-    # role guard, we will demonstrate the role restriction failing, then passing.
     print("\n🔹 Step 3: Verifying Role Security Controls...")
     
     thread_data = {"title": "Decentralized Public Transit Budgets", "category": "Infrastructure"}
@@ -138,4 +139,4 @@ def run_integration_test():
     print("\n🎉 ALL TESTS PASSED SUCCESSFULLY! Core CRUD and authorization lines are operational.")
 
 if __name__ == "__main__":
-    run_integration_test()
+    test_integration_lifecycle()

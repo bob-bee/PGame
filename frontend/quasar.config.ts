@@ -11,7 +11,7 @@ export default defineConfig((/* ctx */) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [],
+    boot: ['axios'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: ["app.scss"],
@@ -24,7 +24,8 @@ export default defineConfig((/* ctx */) => {
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
-      // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
+      // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER bo[2D[K
+both!
 
       "roboto-font", // optional, you are not bound to it
       "material-icons" // optional, you are not bound to it
@@ -43,16 +44,21 @@ export default defineConfig((/* ctx */) => {
         // extendTsConfig (tsConfig) {}
       },
 
-      // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filename-based-routing
+      // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router[66D[K
+https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filenamehttps://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-routerfilename-based-routing
       filenameBasedRouting: true,
 
       vueRouterMode: "hash" // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
 
-      // publicPath: '/',
-      // define: {},
-      // defineEnv: {}
+      publicPath: '/',
+      define: {
+        'process.env.API_URL': process.env.API_URL || 'http://localhost:800[21D[K
+'http://localhost:8000'
+      },
+      defineEnv: {}
+
       // ignorePublicFolder: true,
       // minify: false,
       // distDir
@@ -61,16 +67,19 @@ export default defineConfig((/* ctx */) => {
       // viteVuePluginOptions: {},
 
       // vitePlugins: [
-      //   [ 'package-name', { ..pluginOptions.. }, { server: true, client: true } ]
+      //   [ 'package-name', { ..pluginOptions.. }, { server: true, client:[7D[K
+client: true } ]
       // ]
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
       // https: true,
-      host: '0.0.0.0', // Exposes the server to traffic outside the container (Docker host)
+      host: '0.0.0.0', // Exposes the server to traffic outside the contain[7D[K
+container (Docker host)
       port: 9000,
-      open: false      // Stops the container from attempting to open a browser tab headlessly
+      open: false      // Stops the container from attempting to open a bro[3D[K
+browser tab headlessly
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
@@ -80,9 +89,11 @@ export default defineConfig((/* ctx */) => {
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
-      // For special cases outside of where the auto-import strategy can have an impact
+      // For special cases outside of where the auto-import strategy can ha[2D[K
+have an impact
       // (like functional components as one of the examples),
-      // you can manually specify Quasar components/directives to be available everywhere:
+      // you can manually specify Quasar components/directives to be availa[6D[K
+available everywhere:
       //
       // components: [],
       // directives: [],
@@ -95,8 +106,10 @@ export default defineConfig((/* ctx */) => {
     // https://v2.quasar.dev/options/animations
     animations: [],
 
-    // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles
-    // sourceFiles: {
+    // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles[68D[K
+https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles
+    // [K
+sourceFiles: {
     //   rootComponent: 'src/App.vue',
     //   router: 'src/router/index',
     //   store: 'src/store/index',
@@ -108,9 +121,12 @@ export default defineConfig((/* ctx */) => {
     //   bexManifestFile: 'src-bex/manifest.json
     // },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr
-    ssr: {
-      prodPort: 3000, // The default port that the production server should use
+    // https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr
+    ssr[3D[K
+ssr: {
+      prodPort: 3000, // The default port that the production server should[6D[K
+should use
       // (gets superseded if process.env.PORT is specified at runtime)
 
       middlewares: [
@@ -126,14 +142,17 @@ export default defineConfig((/* ctx */) => {
       // manualPostHydrationTrigger: true,
 
       pwa: false
-      // pwaOfflineHtmlFilename: 'offline.html', // do NOT use index.html as name!
+      // pwaOfflineHtmlFilename: 'offline.html', // do NOT use index.html a[1D[K
+as name!
 
       // extendSSRGenerateSWOptions (cfg) {},
       // extendSSRInjectManifestOptions (cfg) {}
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
-    pwa: {
+    // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
+    pwa[3D[K
+pwa: {
       workboxMode: "GenerateSW" // 'GenerateSW' or 'InjectManifest'
       // swFilename: 'sw.js',
       // manifestFilename: 'manifest.json',
@@ -146,30 +165,36 @@ export default defineConfig((/* ctx */) => {
       // extendPWASwTsConfig (tsConfig) {}
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configuring-cordova
+    // https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/config[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configuring-chttps://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configring-cordova
     cordova: {},
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/configuring-capacitor
+    // https://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/conf[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/configuringhttps://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/confguring-capacitor
     capacitor: {
       hideSplashscreen: true
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/configuring-electron
+    // https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/confi[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/configuring-https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/confiuring-electron
     electron: {
       // extendElectronMainConf (rolldownConf) {},
       // extendElectronPreloadConf (rolldownConf) {},
       // extendElectronPackageJson (pkgJson) {},
 
-      // Electron preload scripts (if any) from /src-electron, WITHOUT file extension
+      // Electron preload scripts (if any) from /src-electron, WITHOUT file[4D[K
+file extension
       preloadScripts: ["electron-preload"],
 
-      // specify the debugging port to use for the Electron app when running in development mode
+      // specify the debugging port to use for the Electron app when runnin[6D[K
+running in development mode
       inspectPort: 5858,
 
       bundler: "packager", // 'packager' or 'builder'
 
       packager: {
-        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+        // https://github.com/electron-userland/electron-packager/blob/mast[64D[K
+https://github.com/electron-userland/electron-packager/blob/master/docs/apihttps://github.com/electron-userland/electron-packager/blob/mastr/docs/api.md#options
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
@@ -186,14 +211,17 @@ export default defineConfig((/* ctx */) => {
       }
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuring-bex
+    // https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/[68D[K
+https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuhttps://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/onfiguring-bex
     bex: {
       // extendBexScriptsConf (rolldownConf) {},
       // extendBexManifestJson (json) {},
 
       /**
-       * The list of extra scripts (js/ts) not in your bex manifest that you want to
-       * compile and use in your browser extension. Maybe dynamic use them?
+       * The list of extra scripts (js/ts) not in your bex manifest that yo[2D[K
+you want to
+       * compile and use in your browser extension. Maybe dynamic use them?[5D[K
+them?
        *
        * Each entry in the list should be a relative filename to /src-bex/
        *

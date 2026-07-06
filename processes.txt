@@ -1,0 +1,401 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  23240 14312 ?        Ss   18:10   0:04 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    18:10   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    18:10   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    18:10   0:03 [ksoftirqd/0]
+root          15  0.1  0.0      0     0 ?        I    18:10   0:15 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    18:10   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    18:10   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    18:10   0:02 [ksoftirqd/1]
+root          26  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/1:0H-events_highpri]
+root          27  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/2]
+root          28  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/2]
+root          29  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/2]
+root          30  0.0  0.0      0     0 ?        S    18:10   0:01 [ksoftirqd/2]
+root          32  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/2:0H-events_highpri]
+root          33  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/3]
+root          34  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/3]
+root          35  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/3]
+root          36  0.0  0.0      0     0 ?        S    18:10   0:01 [ksoftirqd/3]
+root          38  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/3:0H-events_highpri]
+root          39  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/4]
+root          40  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/4]
+root          41  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/4]
+root          42  0.0  0.0      0     0 ?        S    18:10   0:01 [ksoftirqd/4]
+root          44  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/4:0H-events_highpri]
+root          45  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/5]
+root          46  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/5]
+root          47  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/5]
+root          48  0.2  0.0      0     0 ?        S    18:10   0:20 [ksoftirqd/5]
+root          50  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/5:0H-events_highpri]
+root          51  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/6]
+root          52  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/6]
+root          53  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/6]
+root          54  0.0  0.0      0     0 ?        S    18:10   0:01 [ksoftirqd/6]
+root          56  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/6:0H-events_highpri]
+root          57  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/7]
+root          58  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/7]
+root          59  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/7]
+root          60  0.0  0.0      0     0 ?        S    18:10   0:01 [ksoftirqd/7]
+root          62  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/7:0H-events_highpri]
+root          63  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/8]
+root          64  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/8]
+root          65  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/8]
+root          66  0.0  0.0      0     0 ?        S    18:10   0:00 [ksoftirqd/8]
+root          68  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/8:0H-events_highpri]
+root          69  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/9]
+root          70  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/9]
+root          71  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/9]
+root          72  0.0  0.0      0     0 ?        S    18:10   0:00 [ksoftirqd/9]
+root          74  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/9:0H-events_highpri]
+root          75  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/10]
+root          76  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/10]
+root          77  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/10]
+root          78  0.0  0.0      0     0 ?        S    18:10   0:00 [ksoftirqd/10]
+root          80  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/10:0H-events_highpri]
+root          81  0.0  0.0      0     0 ?        S    18:10   0:00 [cpuhp/11]
+root          82  0.0  0.0      0     0 ?        S    18:10   0:00 [idle_inject/11]
+root          83  0.0  0.0      0     0 ?        S    18:10   0:00 [migration/11]
+root          84  0.0  0.0      0     0 ?        S    18:10   0:00 [ksoftirqd/11]
+root          86  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/11:0H-events_highpri]
+root          87  0.0  0.0      0     0 ?        S    18:10   0:00 [kdevtmpfs]
+root          88  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-inet_frag_wq]
+root          89  0.0  0.0      0     0 ?        I    18:10   0:00 [rcu_tasks_kthread]
+root          90  0.0  0.0      0     0 ?        I    18:10   0:00 [rcu_tasks_rude_kthread]
+root          91  0.0  0.0      0     0 ?        I    18:10   0:00 [rcu_tasks_trace_kthread]
+root          92  0.0  0.0      0     0 ?        S    18:10   0:00 [kauditd]
+root          93  0.0  0.0      0     0 ?        S    18:10   0:00 [khungtaskd]
+root          94  0.0  0.0      0     0 ?        S    18:10   0:00 [oom_reaper]
+root          97  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-writeback]
+root          98  0.0  0.0      0     0 ?        S    18:10   0:00 [kcompactd0]
+root          99  0.0  0.0      0     0 ?        SN   18:10   0:00 [ksmd]
+root         100  0.0  0.0      0     0 ?        SN   18:10   0:00 [khugepaged]
+root         101  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-kblockd]
+root         102  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-blkcg_punt_bio]
+root         103  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-kintegrityd]
+root         104  0.0  0.0      0     0 ?        S    18:10   0:02 [irq/9-acpi]
+root         108  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-tpm_dev_wq]
+root         109  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ata_sff]
+root         110  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-md]
+root         111  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-md_bitmap]
+root         112  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-edac-poller]
+root         113  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-devfreq_wq]
+root         114  0.0  0.0      0     0 ?        S    18:10   0:00 [watchdogd]
+root         115  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-quota_events_unbound]
+root         116  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/6:1H-i915_cleanup]
+root         117  0.0  0.0      0     0 ?        S    18:10   0:00 [irq/120-dmar0-prq]
+root         119  0.0  0.0      0     0 ?        S    18:10   0:00 [ksgxd]
+root         121  0.0  0.0      0     0 ?        S    18:10   0:00 [kswapd0]
+root         122  0.0  0.0      0     0 ?        S    18:10   0:00 [ecryptfs-kthread]
+root         123  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-kthrotld]
+root         124  0.0  0.0      0     0 ?        S    18:10   0:00 [irq/124-pciehp]
+root         125  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-acpi_thermal_pm]
+root         126  0.0  0.0      0     0 ?        S    18:10   0:00 [hwrng]
+root         127  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-mld]
+root         128  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/7:1H-kblockd]
+root         129  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ipv6_addrconf]
+root         130  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-kstrp]
+root         146  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-charger_manager]
+root         147  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/0:1H-kblockd]
+root         172  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/11:1H-i915_cleanup]
+root         175  0.0  0.0      0     0 ?        I<   18:10   0:01 [kworker/10:1H-i915_cleanup]
+root         188  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/3:1H-i915_cleanup]
+root         190  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/1:1H-kblockd]
+root         205  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/2:1H-kblockd]
+root         206  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/5:1H-i915_cleanup]
+root         207  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/8:1H-i915_cleanup]
+root         208  0.0  0.0      0     0 ?        I<   18:10   0:01 [kworker/9:1H-kblockd]
+root         224  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/4:1H-kblockd]
+root         232  0.0  0.0      0     0 ?        S    18:10   0:00 [scsi_eh_0]
+root         233  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-scsi_tmf_0]
+root         234  0.0  0.0      0     0 ?        S    18:10   0:00 [scsi_eh_1]
+root         235  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-scsi_tmf_1]
+root         236  0.0  0.0      0     0 ?        S    18:10   0:00 [scsi_eh_2]
+root         237  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-scsi_tmf_2]
+root         238  0.0  0.0      0     0 ?        S    18:10   0:00 [scsi_eh_3]
+root         239  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-scsi_tmf_3]
+root         240  0.0  0.0      0     0 ?        S    18:10   0:00 [scsi_eh_4]
+root         241  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-scsi_tmf_4]
+root         245  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-nvme-wq]
+root         246  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-nvme-reset-wq]
+root         247  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-nvme-delete-wq]
+root         248  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-nvme-auth-wq]
+root         254  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ktpacpid]
+root         262  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-USBC000:00-con1]
+root         263  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-USBC000:00-con2]
+root         311  0.0  0.0      0     0 ?        S    18:10   0:01 [jbd2/sda1-8]
+root         312  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ext4-rsv-conversion]
+root         358  0.0  0.0  67392 19808 ?        S<s  18:10   0:01 /usr/lib/systemd/systemd-journald
+root         394  0.0  0.0  30352  8256 ?        Ss   18:10   0:01 /usr/lib/systemd/systemd-udevd
+root         418  0.0  0.0      0     0 ?        S    18:10   0:00 [psimon]
+root         499  0.0  0.0      0     0 ?        S    18:10   0:00 [irq/151-mei_me]
+root         502  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-cfg80211]
+root         534  0.3  0.0      0     0 ?        S    18:10   0:25 [irq/152-iwlwifi]
+root         543  0.0  0.0      0     0 ?        S    18:10   0:01 [jbd2/sda3-8]
+root         544  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ext4-rsv-conversion]
+systemd+     690  0.0  0.0  17572  7656 ?        Ss   18:10   0:04 /usr/lib/systemd/systemd-oomd
+systemd+     691  0.0  0.0  21612 13156 ?        Ss   18:10   0:01 /usr/lib/systemd/systemd-resolved
+systemd+     692  0.0  0.0  91060  7852 ?        Ssl  18:10   0:00 /usr/lib/systemd/systemd-timesyncd
+root         699  0.0  0.0      0     0 ?        I<   18:10   0:00 [kworker/R-ttm]
+root         700  0.0  0.0      0     0 ?        S    18:10   0:00 [card1-crtc0]
+root         701  0.0  0.0      0     0 ?        S    18:10   0:00 [card1-crtc1]
+root         702  0.0  0.0      0     0 ?        S    18:10   0:00 [card1-crtc2]
+root         705  0.0  0.0      0     0 ?        S    18:10   0:00 [nv_queue]
+root         706  0.0  0.0      0     0 ?        S    18:10   0:00 [nv_queue]
+root         709  0.4  0.0      0     0 ?        S    18:10   0:37 [irq/154-elan_i2c]
+avahi        741  0.0  0.0   8760  4652 ?        Ss   18:10   0:00 avahi-daemon: running [BoB.local]
+root         742  0.0  0.0  13668  6788 ?        Ss   18:10   0:00 /usr/libexec/bluetooth/bluetoothd
+message+     743  0.0  0.0  12368  7616 ?        Ss   18:10   0:03 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+     746  0.0  0.0 365492 16516 ?        Ssl  18:10   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      757  0.0  0.0 384752 11204 ?        Ssl  18:10   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         760  0.0  0.0 313516  7908 ?        Ssl  18:10   0:00 /usr/libexec/power-profiles-daemon
+root         768  0.0  0.0 315212  9632 ?        Ssl  18:10   0:00 /usr/libexec/accounts-daemon
+root         769  0.0  0.0   9432  2856 ?        Ss   18:10   0:00 /usr/sbin/cron -f -P
+root         770  0.0  0.0      0     0 ?        S    18:10   0:00 [nvidia-modeset/kthread_q]
+root         771  0.0  0.0      0     0 ?        S    18:10   0:00 [nvidia-modeset/deferred_close_kthread_q]
+root         773  0.0  0.0 309932  6944 ?        Ssl  18:10   0:00 /usr/libexec/switcheroo-control
+root         775  0.0  0.0  18208  9300 ?        Ss   18:10   0:00 /usr/lib/systemd/systemd-logind
+root         776  0.0  0.0      0     0 ?        S    18:10   0:01 [irq/155-nvidia]
+root         777  0.0  0.0      0     0 ?        S    18:10   0:00 [nvidia]
+root         778  0.0  0.0      0     0 ?        S    18:10   0:01 [nv_queue]
+root         779  0.1  0.0 424932 10700 ?        Ssl  18:10   0:15 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+root         780  0.0  0.0 469628 14976 ?        Ssl  18:10   0:02 /usr/libexec/udisks2/udisksd
+avahi        785  0.0  0.0   8488  1528 ?        S    18:10   0:00 avahi-daemon: chroot helper
+root         840  0.0  0.0 337328 20668 ?        Ssl  18:10   0:02 /usr/sbin/NetworkManager --no-daemon
+root         843  0.0  0.0  18420 11976 ?        Ss   18:10   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+syslog       848  0.0  0.0 222572  6768 ?        Ssl  18:10   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         896  0.0  0.0 318376 12640 ?        Ssl  18:10   0:00 /usr/sbin/ModemManager
+root         927  0.0  0.0 317496 10004 ?        Ssl  18:10   0:01 /usr/libexec/upowerd
+root         996  0.0  0.0      0     0 ?        S    18:10   0:00 [psimon]
+root        1031  0.0  0.0  38412 12228 ?        Ss   18:10   0:00 /usr/sbin/cupsd -l
+root        1039  0.0  0.0 118076 24824 ?        Ssl  18:10   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1045  0.1  0.0 2607612 48584 ?       Ssl  18:10   0:10 /usr/bin/containerd
+root        1134  0.0  0.0      0     0 ?        S    18:10   0:00 [UVM global queue]
+root        1135  0.0  0.0      0     0 ?        S    18:10   0:00 [UVM deferred release queue]
+root        1136  0.0  0.0      0     0 ?        S    18:10   0:00 [UVM Tools Event Queue]
+nvidia-+    1141  0.0  0.0   5236  2088 ?        Ss   18:10   0:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root        1152  0.0  0.0 314828  9184 ?        Ssl  18:10   0:00 /usr/sbin/gdm3
+rtkit       1190  0.0  0.0  22948  3468 ?        SNsl 18:10   0:00 /usr/libexec/rtkit-daemon
+root        1228  0.0  0.0      0     0 ?        S<   18:10   0:00 [krfcommd]
+cups-br+    1318  0.0  0.0 268504 19760 ?        Ssl  18:10   0:00 /usr/sbin/cups-browsed
+root        1321  1.6  0.1 3567376 117256 ?      Ssl  18:10   2:13 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+ollama      1323  0.0  0.0 2560276 46072 ?       Ssl  18:10   0:06 /usr/local/bin/ollama serve
+kernoops    1325  0.0  0.0  12752  2324 ?        Ss   18:10   0:00 /usr/sbin/kerneloops --test
+kernoops    1328  0.0  0.0  12752  2376 ?        Ss   18:10   0:00 /usr/sbin/kerneloops
+root        1337  0.7  0.0 3062628 32936 ?       Sl   18:10   1:04 /opt/teamviewer/tv_bin/teamviewerd -d
+colord      1952  0.0  0.0 320208 14568 ?        Ssl  18:10   0:00 /usr/libexec/colord
+root        2335  0.0  0.0 242592 11324 ?        Sl   18:11   0:00 gdm-session-worker [pam/gdm-password]
+bob         2356  0.0  0.0  21284 12744 ?        Ss   18:11   0:02 /usr/lib/systemd/systemd --user
+bob         2363  0.0  0.0  21480  3684 ?        S    18:11   0:00 (sd-pam)
+bob         2372  0.0  0.0 116484 15164 ?        S<sl 18:11   0:04 /usr/bin/pipewire
+bob         2373  0.0  0.0  24012  5740 ?        Ssl  18:11   0:00 /usr/bin/pipewire -c filter-chain.conf
+bob         2375  0.0  0.0 569188 31924 ?        S<sl 18:11   0:00 /usr/bin/wireplumber
+bob         2376  0.0  0.0 121628 22568 ?        S<sl 18:11   0:07 /usr/bin/pipewire-pulse
+bob         2378  0.0  0.0 537972 10748 ?        SLsl 18:11   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+bob         2386  0.0  0.0  11064  6756 ?        Ss   18:11   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+bob         2403  0.0  0.0  29412  8480 ?        Ss   18:11   0:01 /usr/bin/jackdbus auto
+bob         2430  0.0  0.0 235720  6324 tty2     Ssl+ 18:11   0:00 /usr/libexec/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+bob         2432  3.8  0.2 26103864 168036 tty2  Sl+  18:11   5:13 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -nolisten tcp -background none -noreset -keeptty -novtswitch -verbose 3
+bob         2434  0.0  0.0 309444  6276 ?        Ssl  18:11   0:00 /usr/libexec/xdg-permission-store
+bob         2495  0.0  0.0 298244 16688 tty2     Sl+  18:11   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+bob         2578  0.0  0.0 383028  8492 ?        Ssl  18:11   0:00 /usr/libexec/at-spi-bus-launcher
+bob         2585  0.0  0.0   9624  5352 ?        S    18:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_1
+bob         2594  0.0  0.0 162660  6992 ?        Ssl  18:11   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+bob         2595  0.0  0.0  91556  5680 ?        Ssl  18:11   0:00 /usr/libexec/gnome-session-ctl --monitor
+bob         2609  0.0  0.0 314280  8136 ?        Ssl  18:11   0:00 /usr/libexec/gvfsd
+bob         2617  0.0  0.0 459716  7328 ?        Sl   18:11   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+bob         2620  0.0  0.0 520584 18484 ?        Ssl  18:11   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+bob         2658  4.2  0.5 4937760 331816 ?      Ssl  18:11   5:50 /usr/bin/gnome-shell
+bob         2690  0.0  0.1 1281716 127896 ?      Sl   18:11   0:04 /usr/libexec/mutter-x11-frames
+bob         2693  0.0  0.0 236060  8316 ?        Sl   18:11   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
+bob         2722  0.0  0.0 655936 21840 ?        Sl   18:11   0:00 /usr/libexec/gnome-shell-calendar-server
+bob         2731  0.0  0.0 1279324 42872 ?       Ssl  18:11   0:00 /usr/libexec/evolution-source-registry
+bob         2733  0.0  0.0 230388  6240 ?        Ssl  18:11   0:00 /usr/libexec/dconf-service
+bob         2746  0.0  0.0 2924764 27400 ?       Sl   18:11   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+bob         2765  0.3  0.0 388864 12668 ?        Ssl  18:11   0:30 /usr/bin/ibus-daemon --panel disable --xim
+bob         2770  0.0  0.0 383608  6816 ?        Ssl  18:11   0:00 /usr/libexec/gsd-a11y-settings
+bob         2771  0.0  0.0 415676 25284 ?        Ssl  18:11   0:00 /usr/libexec/gsd-color
+bob         2774  0.0  0.0 431760 12308 ?        Ssl  18:11   0:00 /usr/libexec/gsd-datetime
+bob         2776  0.0  0.0 459128  8244 ?        Ssl  18:11   0:01 /usr/libexec/gsd-housekeeping
+bob         2778  0.0  0.0 414520 24648 ?        Ssl  18:11   0:00 /usr/libexec/gsd-keyboard
+bob         2780  0.0  0.0 597060 30720 ?        Ssl  18:11   0:00 /usr/libexec/gsd-media-keys
+bob         2787  0.0  0.0 526300 28376 ?        Ssl  18:11   0:00 /usr/libexec/gsd-power
+bob         2791  0.0  0.0 323772 11820 ?        Ssl  18:11   0:00 /usr/libexec/gsd-print-notifications
+bob         2795  0.0  0.0 457360  7024 ?        Ssl  18:11   0:00 /usr/libexec/gsd-rfkill
+bob         2800  0.0  0.0 309564  6460 ?        Ssl  18:11   0:00 /usr/libexec/gsd-screensaver-proxy
+bob         2804  0.0  0.0 543412 12432 ?        Ssl  18:11   0:01 /usr/libexec/gsd-sharing
+bob         2808  0.0  0.0 385908  8356 ?        Ssl  18:11   0:00 /usr/libexec/gsd-smartcard
+bob         2809  0.0  0.0 393728  9876 ?        Ssl  18:11   0:00 /usr/libexec/gsd-sound
+bob         2814  0.0  0.0 415176 25072 ?        Ssl  18:11   0:00 /usr/libexec/gsd-wacom
+bob         2816  0.0  0.0 416748 28248 ?        Ssl  18:11   0:00 /usr/libexec/gsd-xsettings
+bob         2835  0.4  0.3 1839112 256156 ?      Sl   18:11   0:40 /opt/freedownloadmanager/fdm --hidden
+bob         2838  0.0  0.0 902888 64636 ?        Sl   18:11   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+bob         2857  0.0  0.0 463136 11232 ?        Ssl  18:11   0:01 /usr/libexec/gvfs-udisks2-volume-monitor
+bob         2858  0.0  0.0 305500  7564 ?        Sl   18:11   0:00 /usr/libexec/gsd-disk-utility-notify
+bob         2903  0.0  0.0 546772 24260 ?        Sl   18:11   0:00 /usr/libexec/goa-daemon
+bob         2919  0.0  0.0 416252 15256 ?        Sl   18:11   0:00 /usr/libexec/gsd-printer
+bob         2941  0.0  0.0 310492  7360 ?        Sl   18:11   0:00 /usr/libexec/ibus-dconf
+bob         2952  0.1  0.0 347968 32040 ?        Sl   18:11   0:10 /usr/libexec/ibus-extension-gtk3
+bob         2957  0.0  0.0 267272 24632 ?        Sl   18:11   0:00 /usr/libexec/ibus-x11 --kill-daemon
+bob         2961  0.0  0.0 389132  9428 ?        Sl   18:11   0:00 /usr/libexec/goa-identity-service
+bob         2963  0.0  0.0 310432  7392 ?        Sl   18:11   0:00 /usr/libexec/ibus-portal
+bob         2996  0.0  0.0 389388  8292 ?        Ssl  18:11   0:00 /usr/libexec/gvfs-afc-volume-monitor
+bob         2998  0.0  0.0 1374296 24548 ?       Ssl  18:11   0:00 /usr/libexec/evolution-calendar-factory
+bob         3004  0.0  0.0 310768  7088 ?        Ssl  18:11   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+bob         3014  0.0  0.0 309780  6696 ?        Ssl  18:11   0:00 /usr/libexec/gvfs-goa-volume-monitor
+bob         3020  0.0  0.0 309800  6768 ?        Ssl  18:11   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+bob         3035  0.0  0.0 825544 29924 ?        Ssl  18:11   0:00 /usr/libexec/evolution-addressbook-factory
+bob         3037  0.0  0.0 628120 15272 ?        Ssl  18:11   0:00 /usr/libexec/xdg-desktop-portal
+bob         3043  0.0  0.0 2801856 27216 ?       Sl   18:11   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+bob         3073  0.0  0.0 536568  7572 ?        Ssl  18:11   0:00 /usr/libexec/xdg-document-portal
+root        3086  0.0  0.0   2712  2096 ?        Ss   18:11   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+bob         3099  0.0  0.0 236776  7612 ?        Sl   18:11   0:07 /usr/libexec/ibus-engine-simple
+bob         3104  0.0  0.0 739504 37764 ?        SNsl 18:11   0:01 /usr/libexec/tracker-miner-fs-3
+bob         3110  0.1  0.2 1950484 180904 ?      Ssl  18:11   0:10 /usr/libexec/xdg-desktop-portal-gnome
+bob         3130  0.0  0.0 3254792 60652 ?       Sl   18:11   0:02 gjs -m /home/bob/.local/share/gnome-shell/extensions/gsconnect@andyholmes.github.io/service/daemon.js
+bob         3425  0.0  0.0 415496 26908 ?        Ssl  18:11   0:00 /usr/libexec/xdg-desktop-portal-gtk
+bob         3436  0.0  0.0 609448  9880 ?        Sl   18:11   0:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+bob         3477  0.0  0.1 3694400 66516 ?       Sl   18:11   0:03 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+bob         3548  0.0  0.0 236312  6548 ?        Ssl  18:11   0:00 /usr/libexec/gvfsd-metadata
+bob         3707  0.0  0.0 388236  8748 ?        Sl   18:11   0:00 /usr/libexec/gvfsd-recent --spawner :1.22 /org/gtk/gvfs/exec_spaw/1
+bob         3928  4.5  0.6 55629404 421016 ?     Sl   18:12   6:09 /opt/google/chrome/chrome
+bob         3934  0.0  0.0   8436  1892 ?        S    18:12   0:00 cat
+bob         3935  0.0  0.0   8436  1892 ?        S    18:12   0:00 cat
+bob         3937  0.0  0.0 54550020 3916 ?       Sl   18:12   0:00 /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/bob/.config/google-chrome/Crash Reports --metrics-dir=/home/bob/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.4 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=150.0.7871.46 --initial-client-fd=5 --shared-client-connection
+bob         3939  0.0  0.0 54540784 3300 ?       Sl   18:12   0:00 /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/bob/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.4 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=150.0.7871.46 --initial-client-fd=4 --shared-client-connection
+bob         3945  0.0  0.0 54957768 63992 ?      S    18:12   0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable
+bob         3946  0.0  0.0 54957752 64828 ?      S    18:12   0:00 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable
+bob         3948  0.0  0.0 54957776 18920 ?      S    18:12   0:00 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable
+bob         3975  4.4  0.3 55536652 234456 ?     Sl   18:12   6:00 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable --gpu-preferences=WAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --metrics-shmem-handle=4,i,9107307371912098644,15961946722262403855,262144 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190708988185955192
+bob         3978  0.6  0.2 55016892 143832 ?     Sl   18:12   0:52 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,10429793380167626580,845628924552485261,524288 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190708989122997041
+bob         3993  0.0  0.0 55041552 59244 ?      Sl   18:12   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,9694111575845806418,9484045832426574276,524288 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190708990060038890
+bob         4072  0.3  0.1 1520533984 129088 ?   Sl   18:12   0:30 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=111428619 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,7342605722187224094,12612683186825752334,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190708992871164437
+bob         4081  0.1  0.2 1520531288 153516 ?   Sl   18:12   0:10 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=111444522 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,17980855153184708971,4766125387603277304,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190708993808206286
+bob         4170  0.0  0.0 140400 16100 ?        Sl   18:12   0:06 /opt/freedownloadmanager/wenativehost chrome-extension://ahmpjcflkgiildlgicmcieglgoilbfdp/
+bob         4246  0.0  0.2 1518558708 131700 ?   Sl   18:12   0:00 /opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=18 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=114054411 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1086204032988548392,1268669997714630729,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709003178624776
+bob         4332  0.7  0.3 1520582308 248488 ?   Sl   18:12   1:03 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=23 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=124685136 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,3929362546582821070,713197841785676741,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709007863834021
+bob         4378  0.0  0.0 489372 26584 ?        Sl   18:12   0:00 /usr/bin/update-notifier
+bob         4602  0.0  0.2 1644300 136960 ?      Sl   18:15   0:01 /usr/bin/gnome-calendar --gapplication-service
+bob         4731  1.6  0.6 4525380 416072 ?      Sl   18:15   2:11 /opt/teamviewer/tv_bin/TeamViewer
+root        5050  0.0  0.0      0     0 ?        I    18:20   0:01 [kworker/10:0-events]
+bob         5214  0.0  0.0   8552  6344 ?        S    18:29   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+bob         5255  0.0  0.0  37728 21372 ?        S    18:29   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+bob         5258  0.0  0.0 382868 28936 ?        Sl   18:29   0:00 /usr/bin/gnome-terminal.real --wait
+bob         5262  0.0  0.0 843576 55156 ?        Ssl  18:29   0:03 /usr/libexec/gnome-terminal-server
+bob         5276  0.0  0.0  15100  9448 pts/3    Ss   18:29   0:00 bash
+bob         5825  0.7  0.3 1461496884 209712 ?   SLsl 18:30   0:56 /usr/share/code/code .
+bob         5847  0.0  0.0 33805904 48388 ?      S    18:30   0:00 /usr/share/code/code --type=zygote --no-zygote-sandbox
+bob         5849  0.0  0.0 50583108 48704 ?      S    18:30   0:00 /usr/share/code/code --type=zygote
+bob         5881  0.0  0.0 50583132 12944 ?      S    18:30   0:00 /usr/share/code/code --type=zygote
+bob         5896  0.0  0.0 50353372 3660 ?       Sl   18:30   0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/bob/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=ef76be5d-10aa-4df2-a14b-a42dc4eabae2&iid=ef76be5d-10aa-4df2-a14b-a42dc4eabae2&sid=ef76be5d-10aa-4df2-a14b-a42dc4eabae2 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.109.5 --annotation=lsb-release=Ubuntu 24.04.4 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=39.3.0 --initial-client-fd=48 --shared-client-connection
+bob         5908  1.5  0.2 34343212 181136 ?     Sl   18:30   1:48 /usr/share/code/code --type=zygote --no-zygote-sandbox
+bob         5918  0.0  0.1 33913580 78992 ?      Sl   18:30   0:04 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=5896 --enable-crash-reporter=11925c12-a3ca-4a6a-bd25-8b22a6bbacfa,no_channel --user-data-dir=/home/bob/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8258710445100555364,7572663171804573587,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708989122997041
+bob         5962  5.5  0.8 1479894388 554836 ?   Sl   18:30   6:34 /usr/share/code/code --type=zygote
+bob         5980  0.5  0.2 1461332916 154332 ?   Sl   18:30   0:35 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=5896 --enable-crash-reporter=11925c12-a3ca-4a6a-bd25-8b22a6bbacfa,no_channel --user-data-dir=/home/bob/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8258710445100555364,7572663171804573587,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708990997080739
+bob         5981  0.1  0.1 1461349876 117024 ?   Sl   18:30   0:08 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=5896 --enable-crash-reporter=11925c12-a3ca-4a6a-bd25-8b22a6bbacfa,no_channel --user-data-dir=/home/bob/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8258710445100555364,7572663171804573587,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708991934122588
+bob         6012  2.9  1.3 1463264720 890144 ?   Sl   18:30   3:29 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=5896 --enable-crash-reporter=11925c12-a3ca-4a6a-bd25-8b22a6bbacfa,no_channel --user-data-dir=/home/bob/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8258710445100555364,7572663171804573587,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708992871164437
+bob         6087  0.0  0.1 1459513376 96820 ?    Sl   18:30   0:00 /usr/share/code/code /home/bob/.vscode/extensions/mongodb.mongodb-vscode-1.16.0/dist/languageServer.js --node-ipc --clientProcessId=6012
+bob         6175  0.0  0.1 1459513268 86416 ?    Sl   18:30   0:00 /usr/share/code/code /home/bob/.vscode/extensions/dbaeumer.vscode-eslint-3.0.24/server/out/eslintServer.js --node-ipc --clientProcessId=6012
+bob         6184  0.0  0.1 1459513268 90844 ?    Sl   18:30   0:02 /usr/share/code/code /home/bob/.vscode/extensions/kisstkondoros.vscode-gutter-preview-0.32.2/dist/server.js --node-ipc --clientProcessId=6012
+bob         6208  0.0  0.1 1459513268 83140 ?    Sl   18:30   0:00 /usr/share/code/code /usr/share/code/resources/app/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=6012
+bob         6425  0.0  0.0  31848  5580 ?        Sl   18:31   0:00 /home/bob/.vscode/extensions/ms-python.python-2026.4.0-linux-x64/python-env-tools/bin/pet server
+bob         6488  0.0  0.0  31172  5044 ?        Sl   18:31   0:01 /home/bob/.vscode/extensions/ms-python.vscode-python-envs-1.20.1-linux-x64/python-env-tools/bin/pet server
+bob         6578  0.4  0.1 1461374652 120968 ?   Sl   18:31   0:34 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=5896 --enable-crash-reporter=11925c12-a3ca-4a6a-bd25-8b22a6bbacfa,no_channel --user-data-dir=/home/bob/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8258710445100555364,7572663171804573587,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708993808206286
+bob         6765  0.0  0.0 282068 48484 ?        Sl   18:31   0:00 /usr/bin/python3 /home/bob/.vscode/extensions/ms-python.isort-2026.6.0/bundled/tool/lsp_server.py
+bob         6766  0.0  0.0  15088  9496 pts/4    Ss+  18:31   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+bob         6916  0.4  0.8 1483123456 534792 ?   Sl   18:31   0:34 /usr/share/code/code /home/bob/.vscode/extensions/ms-python.vscode-pylance-2026.2.1/dist/server.bundle.js --cancellationReceive=file:fcd066f902bbe0f4e5af28097b13b0567774116fdc --node-ipc --clientProcessId=6012
+bob         7228  0.0  0.0  15092  9496 pts/5    Ss   18:31   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+bob         8715  0.0  0.1 1476290484 93680 ?    Sl   18:33   0:00 /usr/share/code/code /usr/share/code/resources/app/extensions/markdown-language-features/dist/serverWorkerMain --node-ipc --clientProcessId=6012
+bob         9337  0.3  0.2 1459808816 172240 pts/5 Sl+ 18:34   0:21 antigravity .
+bob         9340  0.0  0.0 50608068 53708 pts/5  S+   18:34   0:00 /opt/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+bob         9341  0.0  0.0 50608060 53404 pts/5  S+   18:34   0:00 /opt/Antigravity-x64/antigravity --type=zygote
+bob         9343  0.0  0.0 50608084 13812 pts/5  S+   18:34   0:00 /opt/Antigravity-x64/antigravity --type=zygote
+bob         9390  2.5  0.2 51117820 183212 pts/5 Sl+  18:34   2:53 /opt/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+bob         9398  0.0  0.1 50690504 81812 pts/5  Sl+  18:34   0:05 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=39825916-49a5-49fe-8384-bba02386db39,no_channel --user-data-dir=/home/bob/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7704171447090785434,6560634963008413888,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,10181996712967896029,6991189990115392136,4 --trace-process-track-uuid=3190708989122997041
+bob         9712  2.0  0.3 4882200 213128 pts/5  Sl+  18:34   2:22 /opt/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.1.4 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 4daff036-3efe-4d71-8b21-7d498c606b60 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+bob         9892  0.0  0.1 50735384 66844 pts/5  Sl+  18:34   0:01 /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=39825916-49a5-49fe-8384-bba02386db39,no_channel --user-data-dir=/home/bob/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7704171447090785434,6560634963008413888,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,10181996712967896029,6991189990115392136,4 --trace-process-track-uuid=3190708991934122588
+bob        10081  0.0  0.0 462280  9028 ?        Sl   18:35   0:00 /usr/libexec/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/3
+bob        10090  0.0  0.0 390556  9188 ?        Sl   18:35   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/4
+bob        10563 45.9  0.9 1518619764 611892 ?   Sl   18:36  51:39 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=57 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=1539015421 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14570009230279596455,14260409335699405387,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709039723256887
+bob        10586  0.0  0.2 1518561696 145084 ?   Sl   18:36   0:02 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=59 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=1540112108 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1738856435002605375,4515608263174980849,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709041597340585
+bob        10641  0.0  0.1 55028568 86940 ?      Sl   18:36   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,3036374966634543331,8439150829591675450,524288 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709043471424283
+bob        11525  0.0  0.0  15092  9484 pts/6    Ss+  18:38   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root       13583  0.0  0.0 404516 48504 ?        Ssl  18:43   0:02 /usr/libexec/fwupd/fwupd
+root       13837  0.0  0.0      0     0 ?        I    18:44   0:01 [kworker/u48:1-events_unbound]
+bob        14100  0.0  0.0      0     0 pts/5    Z+   18:44   0:00 [xdg-open] <defunct>
+bob        14109  0.0  0.0 320068  9808 ?        Sl   18:44   0:00 /usr/libexec/gvfsd-http --spawner :1.22 /org/gtk/gvfs/exec_spaw/7
+root       16598  0.0  0.0      0     0 ?        I    18:49   0:00 [kworker/11:2-cgroup_free]
+root       16606  0.0  0.0      0     0 ?        I    18:49   0:00 [kworker/4:2-cgroup_free]
+root       16607  0.0  0.0      0     0 ?        I    18:49   0:00 [kworker/6:0-cgroup_free]
+root       21495  0.2  0.0      0     0 ?        I    18:51   0:17 [kworker/5:2-events]
+root       22109  0.0  0.0      0     0 ?        I    18:52   0:00 [kworker/8:0-events]
+root       22380  0.0  0.0      0     0 ?        I    18:53   0:00 [kworker/7:2-cgroup_free]
+root       27401  0.0  0.0      0     0 ?        I    18:59   0:00 [kworker/2:0-events]
+bob        27767  0.0  0.1 1476290484 81956 ?    Sl   18:59   0:00 /usr/share/code/code /home/bob/.vscode/extensions/ms-azuretools.vscode-containers-2.4.5/dist/dockerfile-language-server-nodejs/lib/server.js --node-ipc --node-ipc --clientProcessId=6012
+bob        27768  0.0  0.1 1459513268 82296 ?    Sl   18:59   0:00 /usr/share/code/code /home/bob/.vscode/extensions/ms-azuretools.vscode-containers-2.4.5/dist/compose-language-service/lib/server.js --node-ipc --node-ipc --clientProcessId=6012
+root       28222  0.0  0.0      0     0 ?        I    19:00   0:00 [kworker/9:2-mld]
+bob        28954  0.0  0.2 1518560560 171316 ?   Sl   19:01   0:04 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=100 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=3029445569 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,12806869495812836640,527093292941189343,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709080016056394
+bob        29001  0.0  0.2 1520534424 173260 ?   Sl   19:01   0:02 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=101 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=3035035732 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,4590015479155206336,12057221875811535795,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709080953098243
+root       33180  0.0  0.0      0     0 ?        I    19:10   0:00 [kworker/4:0-events]
+bob        36907  0.1  0.2 1459513268 147808 ?   Sl   19:19   0:05 /usr/share/code/code --max-old-space-size=3072 /home/bob/.vscode/extensions/vue.volar-3.3.6/dist/tsserver.js --serverMode partialSemantic --useInferredProjectPerProjectRoot --disableAutomaticTypingAcquisition --cancellationPipeName /tmp/vscode-typescript1000/1da42e164e6faa962963/tscancellation-d5f16655a567bab038a0.tmp* --globalPlugins @vscode/copilot-typescript-server-plugin,vue-reactivity-analysis-plugin-pack,vue-typescript-plugin-pack --pluginProbeLocations /home/bob/.vscode/extensions/github.copilot-chat-0.37.9,/home/bob/.vscode/extensions/vue.volar-3.3.6,/home/bob/.vscode/extensions/vue.volar-3.3.6 --locale en --noGetErrOnBackgroundUpdate --canUseWatchEvents --validateDefaultNpmLocation --useNodeIpc
+bob        36908  0.2  0.2 1459513332 169188 ?   Sl   19:19   0:10 /usr/share/code/code --max-old-space-size=3072 /home/bob/.vscode/extensions/vue.volar-3.3.6/dist/tsserver.js --useInferredProjectPerProjectRoot --enableTelemetry --cancellationPipeName /tmp/vscode-typescript1000/1da42e164e6faa962963/tscancellation-ba1dbd9177d6e2f9b8e3.tmp* --globalPlugins @vscode/copilot-typescript-server-plugin,vue-reactivity-analysis-plugin-pack,vue-typescript-plugin-pack --pluginProbeLocations /home/bob/.vscode/extensions/github.copilot-chat-0.37.9,/home/bob/.vscode/extensions/vue.volar-3.3.6,/home/bob/.vscode/extensions/vue.volar-3.3.6 --locale en --noGetErrOnBackgroundUpdate --canUseWatchEvents --validateDefaultNpmLocation --useNodeIpc
+bob        36939  0.0  0.1 1476290484 102804 ?   Sl   19:19   0:00 /usr/share/code/code /home/bob/.vscode/extensions/ms-vscode.vscode-typescript-next-6.0.20260416/node_modules/typescript/lib/typingsInstaller.js --globalTypingsCacheLocation /home/bob/.cache/typescript/6.0 --enableTelemetry --typesMapLocation /home/bob/.vscode/extensions/ms-vscode.vscode-typescript-next-6.0.20260416/node_modules/typescript/lib/typesMap.json --validateDefaultNpmLocation
+root       37121  0.0  0.0      0     0 ?        I    19:20   0:00 [kworker/11:0-events]
+root       42344  0.0  0.0      0     0 ?        I    19:33   0:00 [kworker/u48:2-i915]
+bob        45231  0.0  0.0  15092  9564 pts/1    Ss   19:39   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+root       46915  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/6:1-events]
+root       47700  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/2:1-events]
+root       47934  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/5:1-mm_percpu_wq]
+root       50706  0.0  0.0      0     0 ?        I<   19:46   0:02 [kworker/u49:0-i915_flip]
+root       53346  0.0  0.0      0     0 ?        I    19:50   0:00 [kworker/u48:3-flush-8:0]
+root       53652  0.0  0.0      0     0 ?        I    19:50   0:00 [kworker/3:1-events]
+root       56206  0.0  0.0      0     0 ?        I    19:56   0:00 [kworker/1:0-events]
+root       58113  0.0  0.0      0     0 ?        I    20:00   0:00 [kworker/0:2-i915-unordered]
+root       58488  0.0  0.0      0     0 ?        I    20:01   0:00 [kworker/u48:4-flush-8:0]
+root       58888  0.0  0.0      0     0 ?        I<   20:02   0:00 [kworker/u49:2-hci0]
+root       61696  0.0  0.0      0     0 ?        I    20:10   0:00 [kworker/0:0-events]
+root       61698  0.0  0.0      0     0 ?        I    20:10   0:00 [kworker/1:1-events]
+bob        61720  0.4  0.1 1476290484 123900 ?   Sl   20:10   0:04 /usr/share/code/code /home/bob/.vscode/extensions/vue.volar-3.3.6/dist/language-server.js --tsdk=/usr/share/code/resources/app/extensions/node_modules/typescript/lib --node-ipc --clientProcessId=6012
+bob        61818  0.0  0.1 1459546052 89948 ?    Sl   20:10   0:00 /usr/share/code/code /home/bob/.vscode/extensions/mrmlnc.vscode-scss-0.10.0/out/unsafe/server.js --node-ipc --clientProcessId=6012
+root       62950  0.0  0.0      0     0 ?        I    20:12   0:00 [kworker/7:0-events]
+root       63031  0.0  0.0      0     0 ?        I<   20:13   0:00 [kworker/u49:1-hci0]
+root       64620  0.0  0.0      0     0 ?        I    20:17   0:00 [kworker/u48:0-flush-8:0]
+root       64766  0.0  0.0      0     0 ?        I    20:17   0:00 [kworker/3:0-events]
+bob        65006 15.2  0.5 1518584524 382560 ?   Sl   20:18   1:35 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=202 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=7657719782 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,11781812100290458692,16666546969093658128,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709175594324992
+root       65075  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/8:1-events]
+root       65294  0.0  0.0      0     0 ?        I    20:18   0:00 [kworker/10:2-cgroup_free]
+root       65777  0.0  0.0      0     0 ?        I    20:20   0:00 [kworker/9:1-events]
+root       66982  0.0  0.0      0     0 ?        I    20:23   0:00 [kworker/3:2-events]
+bob        67344  0.0  0.0  22424 12192 pts/1    S+   20:24   0:00 python3 runAgent.py pipeline
+ollama     67377  354  5.7 5652076 3735916 ?     Rl   20:24  16:06 /usr/local/lib/ollama/llama-server --model /usr/share/ollama/.ollama/models/blobs/sha256-60e05f2100071479f596b964f89f510f057ce397ea22f2833a0cfe029bfc2463 --port 34851 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --flash-attn auto -b 512 -ub 512 --context-shift --keep 4
+root       67751  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/5:0-events]
+root       68268  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/10:1-mm_percpu_wq]
+root       68301  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/4:1-i915-unordered]
+root       68331  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/8:2-events]
+root       68338  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/2:2-events]
+root       68399  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/1:2]
+root       68410  0.0  0.0      0     0 ?        I    20:24   0:00 [kworker/0:1-events]
+bob        69226  0.0  0.0 2097800 30084 ?       Sl   20:24   0:00 docker events --since 1783362300 --until 1783362600 --filter type=container --filter type=image --filter type=network --filter type=volume --filter event=create --filter event=destroy --filter event=die --filter event=kill --filter event=pause --filter event=rename --filter event=restart --filter event=start --filter event=stop --filter event=unpause --filter event=update --filter event=delete --filter event=import --filter event=load --filter event=pull --filter event=save --filter event=tag --filter event=untag --filter event=remove --filter event=prune --format {{json .}}
+bob        71043  0.2  0.0 2189888 33096 pts/1   Sl+  20:25   0:00 ollama run qwen2.5-coder:7b System Context: # Master Agent System Instructions  ## Execution Paradigm You are an advanced full-stack controller. Your operating rules are: 1. Locate the file targeted for edits. 2. Read the adjacent micro-agent specification block (`*Agent.md`). 3. Apply changes matching the instructions EXACTLY. 4. Output raw source file text blocks ONLY. Do not write chat responses or explain modifications.  SPECIFIC MICRO-AGENT INVARIANTS: # Micro-Agent: Quasar Cross-Platform Build Configuration  ## Role & Responsibilities You are solely responsible for modifying `quasar.config.ts`. Your focus is maintaining environment variable mapping and multi-platform compilation targets (SPA, Electron, Capacitor).  ## Invariant Rules 1. **Dynamic API Binding:** Always ensure `process.env.API_URL` resolves to the local Docker backend URL `http://localhost:8000` as a fallback if not explicitly provided during compilation. 2. **Relative Dist Paths:** Never use absolute paths (e.g., `/assets/`) that break asset lookups on custom file system wrappers. Use `publicPath: ''` or ensure relative mapping parameters are active. 3. **No Legacy Options:** Any modifications to plugins, boot frameworks, or styles must use modern Quasar 2 / Vite integration conventions.  Task: CURRENT FILE CONTENT: ``` // Configuration for your app // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file  import { defineConfig } from "#q-app";  export default defineConfig((/* ctx */) => {   return {     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature     // preFetch: true,      // app boot file (/src/boot)     // --> boot files are part of "main.js"     // https://v2.quasar.dev/quasar-cli-vite/boot-files     boot: [],      // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css     css: ["app.scss"],      // https://github.com/quasarframework/quasar/tree/dev/extras     extras: [       // 'ionicons-v4',       // 'mdi-v7',       // 'fontawesome-v7',       // 'eva-icons',       // 'themify',       // 'line-awesome',       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!        "roboto-font", // optional, you are not bound to it       "material-icons" // optional, you are not bound to it     ],      // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build     build: {       target: {         // browser: 'baseline-widely-available',         // node: 'node22'       },        typescript: {         strict: true,         vueShim: true         // extendTsConfig (tsConfig) {}       },        // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filename-based-routing       filenameBasedRouting: true,        vueRouterMode: "hash" // available values: 'hash', 'history'       // vueRouterBase,       // vueDevtools,        // publicPath: '/',       // define: {},       // defineEnv: {}       // ignorePublicFolder: true,       // minify: false,       // distDir        // extendViteConf (viteConf) {},       // viteVuePluginOptions: {},        // vitePlugins: [       //   [ 'package-name', { ..pluginOptions.. }, { server: true, client: true } ]       // ]     },      // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver     devServer: {       // https: true,       host: '0.0.0.0', // Exposes the server to traffic outside the container (Docker host)       port: 9000,       open: false      // Stops the container from attempting to open a browser tab headlessly     },      // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework     framework: {       config: {},        // iconSet: 'material-icons', // Quasar icon set       // lang: 'en-US', // Quasar language pack        // For special cases outside of where the auto-import strategy can have an impact       // (like functional components as one of the examples),       // you can manually specify Quasar components/directives to be available everywhere:       //       // components: [],       // directives: [],        // Quasar plugins       plugins: []     },      // animations: 'all', // --- includes all animations     // https://v2.quasar.dev/options/animations     animations: [],      // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles     // sourceFiles: {     //   rootComponent: 'src/App.vue',     //   router: 'src/router/index',     //   store: 'src/store/index',     //   pwaRegisterServiceWorker: 'src-pwa/register-sw',     //   pwaServiceWorker: 'src-pwa/sw/custom-sw',     //   pwaManifestFile: 'src-pwa/manifest.json',     //   electronMain: 'src-electron/electron-main',     //   electronPreload: 'src-electron/electron-preload'     //   bexManifestFile: 'src-bex/manifest.json     // },      // https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr     ssr: {       prodPort: 3000, // The default port that the production server should use       // (gets superseded if process.env.PORT is specified at runtime)        middlewares: [         "render" // keep this as last one       ],        // extendSSRPackageJson (pkgJson) {},       // extendSSRWebserverConf (rolldownConf) {},        // manualStoreSerialization: true,       // manualStoreSsrContextInjection: true,       // manualStoreHydration: true,       // manualPostHydrationTrigger: true,        pwa: false       // pwaOfflineHtmlFilename: 'offline.html', // do NOT use index.html as name!        // extendSSRGenerateSWOptions (cfg) {},       // extendSSRInjectManifestOptions (cfg) {}     },      // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa     pwa: {       workboxMode: "GenerateSW" // 'GenerateSW' or 'InjectManifest'       // swFilename: 'sw.js',       // manifestFilename: 'manifest.json',       // extendPWAManifestJson (json) {},       // useCredentialsForManifestTag: true,       // injectPWAMetaTags: false,       // extendPWACustomSWConf (rolldownConf) {},       // extendPWAGenerateSWOptions (cfg) {},       // extendPWAInjectManifestOptions (cfg) {},       // extendPWASwTsConfig (tsConfig) {}     },      // https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configuring-cordova     cordova: {},      // https://v2.quasar.dev/quasar-cli-vite/developing-capacitor-apps/configuring-capacitor     capacitor: {       hideSplashscreen: true     },      // https://v2.quasar.dev/quasar-cli-vite/developing-electron-apps/configuring-electron     electron: {       // extendElectronMainConf (rolldownConf) {},       // extendElectronPreloadConf (rolldownConf) {},       // extendElectronPackageJson (pkgJson) {},        // Electron preload scripts (if any) from /src-electron, WITHOUT file extension       preloadScripts: ["electron-preload"],        // specify the debugging port to use for the Electron app when running in development mode       inspectPort: 5858,        bundler: "packager", // 'packager' or 'builder'        packager: {         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options         // OS X / Mac App Store         // appBundleId: '',         // appCategoryType: '',         // osxSign: '',         // protocol: 'myapp://path',         // Windows only         // win32metadata: { ... }       },        builder: {         // https://www.electron.build/configuration          appId: "frontend"       }     },      // https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuring-bex     bex: {       // extendBexScriptsConf (rolldownConf) {},       // extendBexManifestJson (json) {},        /**        * The list of extra scripts (js/ts) not in your bex manifest that you want to        * compile and use in your browser extension. Maybe dynamic use them?        *        * Each entry in the list should be a relative filename to /src-bex/        *        * @example [ 'my-script.ts', 'sub-folder/my-other-script.js' ]        */       extraScripts: []     }   }; });  ```  INSTRUCTION: Add 'axios' to the boot array and configure the env build block with a dynamic API_URL pointing to process.env.API_URL || 'http://localhost:8000'.
+bob        71203  0.4  0.1 1520448816 98376 ?    Sl   20:26   0:00 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=215 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=8142299085 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,1978299344461491063,14862633398668831756,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709187775869029
+bob        72809  0.0  0.0 71793796 50784 ?      Sl   20:27   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=data_decoder.mojom.DataDecoderService --lang=en-US --service-sandbox-type=service --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2651357053227266444,5693361806197451953,524288 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709191524036425
+bob        73105  2.5  0.2 1518557788 169856 ?   Sl   20:27   0:01 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=220 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=8206303065 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,5884920545793660596,12476370718948134717,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709192461078274
+bob        73121  0.0  0.1 1518474476 76608 ?    Sl   20:27   0:00 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3937 --enable-crash-reporter=15b920e0-6e83-4706-8b1d-872d83b22b4a, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=221 --time-ticks-at-unix-epoch=-1783354237361476 --launch-time-ticks=8206444465 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,16261179319641976519,1515526057303024604,2097152 --field-trial-handle=3,i,17043616660224427919,6097041151588214424,262144 --variations-seed-version=20260630-171645.651000-production --pseudonymization-salt-handle=7,i,10232908110369555831,7305920896433240993,4 --trace-process-track-uuid=3190709193398120123
+bob        74194  0.0  0.0  49080  8300 ?        Ss   20:27   0:00 /usr/libexec/bluetooth/obexd
+root       74360  0.0  0.0      0     0 ?        I    20:27   0:00 [kworker/7:1]
+root       75106  0.0  0.0      0     0 ?        I    20:28   0:00 [kworker/9:0-cgroup_free]
+root       75237  0.0  0.0      0     0 ?        I<   20:28   0:00 [kworker/u49:3-hci0]
+bob        75750  700  0.0  14024  4988 pts/3    R+   20:28   0:00 ps aux
