@@ -28,10 +28,23 @@ class User(SQLModel, table=True):
     role: UserRole = Field(default=UserRole.USER)
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
-    # Relationships
-    threads: List["Thread"] = Relationship(back_populates="creator")
-    statements: List["Statement"] = Relationship(back_populates="contender")
-    responses: List["CommunityResponse"] = Relationship(back_populates="user")
+    # Relationships (Using selectin loading for async capability)
+    threads: List["Thread"] = Relationship(
+        back_populates="creator",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
+    statements: List["Statement"] = Relationship(
+        back_populates="contender",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
+    responses: List["CommunityResponse"] = Relationship(
+        back_populates="user",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
+    reactions: List["Reaction"] = Relationship(
+        back_populates="user",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
 # --- THREAD MODEL ---
 class Thread(SQLModel, table=True):
@@ -41,10 +54,16 @@ class Thread(SQLModel, table=True):
     status: ThreadStatus = Field(default=ThreadStatus.PROPOSED)
     created_at: datetime = Field(default_factory=datetime.utcnow)
     
-    creator_id: int = Field(foreign_key="user.id", nullable=False)
-    creator: User = Relationship(back_populates="threads")
+    creator_id: int = Field(foreign_key="user.id", nullable=False, index=True)
+    creator: User = Relationship(
+        back_populates="threads",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
     
-    statements: List["Statement"] = Relationship(back_populates="thread")
+    statements: List["Statement"] = Relationship(
+        back_populates="thread",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
 # --- STATEMENT MODEL (Contenders Only) ---
 class Statement(SQLModel, table=True):
@@ -52,14 +71,26 @@ class Statement(SQLModel, table=True):
     body: str = Field(nullable=False)
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
-    thread_id: int = Field(foreign_key="thread.id", nullable=False)
-    thread: Thread = Relationship(back_populates="statements")
+    thread_id: int = Field(foreign_key="thread.id", nullable=False, index=True)
+    thread: Thread = Relationship(
+        back_populates="statements",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
-    contender_id: int = Field(foreign_key="user.id", nullable=False)
-    contender: User = Relationship(back_populates="statements")
+    contender_id: int = Field(foreign_key="user.id", nullable=False, index=True)
+    contender: User = Relationship(
+        back_populates="statements",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
-    responses: List["CommunityResponse"] = Relationship(back_populates="statement")
-    reactions: List["Reaction"] = Relationship(back_populates="statement")
+    responses: List["CommunityResponse"] = Relationship(
+        back_populates="statement",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
+    reactions: List["Reaction"] = Relationship(
+        back_populates="statement",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
 # --- COMMUNITY RESPONSE MODEL ---
 class CommunityResponse(SQLModel, table=True):
@@ -68,11 +99,17 @@ class CommunityResponse(SQLModel, table=True):
     body: str = Field(nullable=False)
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
-    statement_id: int = Field(foreign_key="statement.id", nullable=False)
-    statement: Statement = Relationship(back_populates="responses")
+    statement_id: int = Field(foreign_key="statement.id", nullable=False, index=True)
+    statement: Statement = Relationship(
+        back_populates="responses",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
-    user_id: int = Field(foreign_key="user.id", nullable=False)
-    user: User = Relationship(back_populates="responses")
+    user_id: int = Field(foreign_key="user.id", nullable=False, index=True)
+    user: User = Relationship(
+        back_populates="responses",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
 # --- REACTION MODEL ---
 class Reaction(SQLModel, table=True):
@@ -80,7 +117,14 @@ class Reaction(SQLModel, table=True):
     reaction: str = Field(nullable=False) # e.g., "agree", "disagree", "neutral"
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
-    statement_id: int = Field(foreign_key="statement.id", nullable=False)
-    statement: Statement = Relationship(back_populates="reactions")
+    statement_id: int = Field(foreign_key="statement.id", nullable=False, index=True)
+    statement: Statement = Relationship(
+        back_populates="reactions",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )
 
-    user_id: int = Field(foreign_key="user.id", nullable=False)
+    user_id: int = Field(foreign_key="user.id", nullable=False, index=True)
+    user: User = Relationship(
+        back_populates="reactions",
+        sa_relationship_kwargs={"lazy": "selectin"}
+    )

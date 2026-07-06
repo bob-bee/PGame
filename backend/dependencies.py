@@ -2,15 +2,38 @@
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
-from sqlmodel import Session, select
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
 from database import get_session
 from models import User, UserRole
 from security import SECRET_KEY, ALGORITHM
+from typing import AsyncGenerator
 
-# This points FastAPI's documentation system to our login route for easy manual testing
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 
-def get_current_user(token: str = Depends(oauth2_scheme), session: Session = Depends(get_session)) -> User:
+class MockRedis:
+    """Placeholder Redis client for future caching implementation."""
+    async def get(self, key: str) -> str | None:
+        return None
+
+    async def set(self, key: str, value: str, ex: int | None = None) -> None:
+        pass
+
+    async def delete(self, key: str) -> None:
+        pass
+
+async def get_redis() -> AsyncGenerator[MockRedis, None]:
+    """FastAPI Dependency for Redis cache client."""
+    client = MockRedis()
+    try:
+        yield client
+    finally:
+        pass
+
+async def get_current_user(
+    token: str = Depends(oauth2_scheme), 
+    session: AsyncSession = Depends(get_session)
+) -> User:
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
@@ -24,7 +47,8 @@ def get_current_user(token: str = Depends(oauth2_scheme), session: Session = Dep
     except JWTError:
         raise credentials_exception
         
-    user = session.exec(select(User).where(User.username == username)).first()
+    result = await session.execute(select(User).where(User.username == username))
+    user = result.scalars().first()
     if user is None:
         raise credentials_exception
     return user

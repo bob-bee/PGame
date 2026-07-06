@@ -1,7 +1,8 @@
 # backend/routers/auth.py
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
-from sqlmodel import Session, select
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
 from database import get_session
 from models import User, UserRole
 from schemas import UserCreate
@@ -10,13 +11,15 @@ from security import hash_password, verify_password, create_access_token
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.post("/register", status_code=status.HTTP_201_CREATED)
-def register(user_data: UserCreate, session: Session = Depends(get_session)):
+async def register(user_data: UserCreate, session: AsyncSession = Depends(get_session)):
     # Check for duplicate registration attributes
-    existing_username = session.exec(select(User).where(User.username == user_data.username)).first()
+    result = await session.execute(select(User).where(User.username == user_data.username))
+    existing_username = result.scalars().first()
     if existing_username:
         raise HTTPException(status_code=400, detail="Username already registered")
         
-    existing_email = session.exec(select(User).where(User.email == user_data.email)).first()
+    result = await session.execute(select(User).where(User.email == user_data.email))
+    existing_email = result.scalars().first()
     if existing_email:
         raise HTTPException(status_code=400, detail="Email already registered")
         
@@ -29,13 +32,14 @@ def register(user_data: UserCreate, session: Session = Depends(get_session)):
     )
     
     session.add(new_user)
-    session.commit()
-    session.refresh(new_user)
+    await session.commit()
+    await session.refresh(new_user)
     return {"message": "User registered successfully", "user_id": new_user.id}
 
 @router.post("/login")
-def login(form_data: OAuth2PasswordRequestForm = Depends(), session: Session = Depends(get_session)):
-    user = session.exec(select(User).where(User.username == form_data.username)).first()
+async def login(form_data: OAuth2PasswordRequestForm = Depends(), session: AsyncSession = Depends(get_session)):
+    result = await session.execute(select(User).where(User.username == form_data.username))
+    user = result.scalars().first()
     if not user or not verify_password(form_data.password, user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

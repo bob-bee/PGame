@@ -15,8 +15,8 @@ app.add_middleware(
 )
 
 @app.on_event("startup")
-def on_startup():
-    init_db()
+async def on_startup():
+    await init_db()
 
 # Mount API Routers
 app.include_router(auth.router)

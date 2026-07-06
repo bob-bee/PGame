@@ -1,5 +1,6 @@
 services:
   db:
+    runtime: runc
     image: postgres:15-alpine
     container_name: p_threads_db
     environment:
@@ -14,6 +15,7 @@ services:
       - p_network
 
   cache:
+    runtime: runc
     image: redis:7-alpine
     container_name: p_threads_cache
     ports:
@@ -22,6 +24,7 @@ services:
       - p_network
 
   backend:
+    runtime: runc
     build:
       context: ./backend
       dockerfile: ../docker/backend.dockerfile
@@ -40,6 +43,7 @@ services:
       - p_network
 
   frontend:
+    runtime: runc
     build:
       context: ./frontend
       dockerfile: ../docker/frontend.dockerfile

@@ -75,17 +75,16 @@ def run_integration_test():
     assert res.status_code == 403, f"Security Guard Failure: Allowed standard user to act as contender: {res.status_code}"
     print(" ✅ Guard Blocked Standard Citizen from posting official Contender statements.")
 
-    print("\n⚠️  [Manual Step Notice] In live operations, a /contenders/apply workflow handles elevation.")
-    print("    To continue testing the backend router pipeline directly, update your database manually:")
-    print(f"    UPDATE \"user\" SET role = 'contender' WHERE username = '{contender_username}';")
-    print("\n    Let's run a soft check. Did you update the test database role flag? (y/n): ")
-    
-    # If automating inside a headless setup, you can query database engines directly.
-    # For now, we wrap the subsequent validation pipeline so it can be verified gracefully.
-    user_input = input().strip().lower()
-    if user_input != 'y':
-        print("Skipping Contender validation pipelines. Test complete up to authorization boundaries.")
-        return
+    print("\n🔹 Step 3b: Automatically elevating Contender role in database...")
+    import subprocess
+    cmd = [
+        "docker", "compose", "exec", "-T", "db",
+        "psql", "-U", "p_user", "-d", "p_threads",
+        "-c", f"UPDATE \"user\" SET role = 'CONTENDER' WHERE username = '{contender_username}';"
+    ]
+    run_res = subprocess.run(cmd, capture_output=True, text=True)
+    assert run_res.returncode == 0, f"Failed to elevate contender: {run_res.stderr}"
+    print(" ✅ Contender role elevated successfully in database.")
 
     # ----------------------------------------------------
     # 4. CONTENDER DISCOURSE LIFECYCLE

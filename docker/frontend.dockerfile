@@ -22,4 +22,4 @@ RUN npm cache clean --force && npm install --legacy-peer-deps
 
 EXPOSE 9000
 
-CMD ["quasar", "dev", "-m", "spa", "--host", "0.0.0.0", "--port", "9000"]
+CMD ["quasar", "dev", "-m", "spa", "--hostname", "0.0.0.0", "--port", "9000"]

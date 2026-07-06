@@ -3,7 +3,7 @@ import os
 import bcrypt
 from datetime import datetime, timedelta
 from typing import Optional
-from jose import JWTError, jwt
+from jose import jwt
 
 # Configuration constants
 SECRET_KEY = os.getenv("JWT_SECRET_KEY", "super-secret-civic-threads-key-change-in-production")
@@ -12,12 +12,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day session expiry
 
 def hash_password(password: str) -> str:
     """Salt and hash a cleartext password using bcrypt directly."""
-    # Convert password string to bytes
     password_bytes = password.encode('utf-8')
-    # Generate salt and hash
     salt = bcrypt.gensalt()
     hashed = bcrypt.hashpw(password_bytes, salt)
-    # Decode back to a string for easy DB storage
     return hashed.decode('utf-8')
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
