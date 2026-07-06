@@ -1,0 +1,62 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: p_threads_db
+    environment:
+      POSTGRES_USER: p_user
+      POSTGRES_PASSWORD: p_password
+      POSTGRES_DB: p_threads
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - p_network
+
+  cache:
+    image: redis:7-alpine
+    container_name: p_threads_cache
+    ports:
+      - "6379:6379"
+    networks:
+      - p_network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../docker/backend.dockerfile
+    container_name: p_threads_backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://p_user:p_password@db:5432/p_threads
+      - REDIS_URL=redis://cache:6379/0
+    depends_on:
+      - db
+      - cache
+    networks:
+      - p_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/frontend.dockerfile
+    container_name: p_threads_frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "9000:9000"
+    depends_on:
+      - backend
+    networks:
+      - p_network
+
+volumes:
+  postgres_data:
+
+networks:
+  p_network:
+    driver: bridge
