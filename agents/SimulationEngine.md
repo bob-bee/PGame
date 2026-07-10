@@ -1,0 +1,2 @@
+Goal: Predictive Policy.
+Prompt: Create a service that accepts a budget allocation plan (from the DeliberationPage). Use historical data to simulate the projected outcomes (e.g., 'If we spend 20% on infrastructure, here is the projected impact on traffic/utility'). Use simple linear regression or LLM-based estimation for the simulation.

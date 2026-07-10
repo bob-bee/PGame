@@ -26,6 +26,7 @@ export default defineConfig((/* ctx */) => {
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER bo[2D[K
 bo[2D[K
+bo[2D[K
 both!
 
       "roboto-font", // optional, you are not bound to it
@@ -45,15 +46,9 @@ both!
         // extendTsConfig (tsConfig) {}
       },
 
-      // https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router[66D[K
-https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router[66D[K
-https://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filenamehttps://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-router#filenamehttps://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-routerfilename-bttps://v2.quasar.dev/quasar-cli-vite/page-routing-with-vue-routerfilename-based-routing
       filenameBasedRouting: true,
 
-      vueRouterMode: "hash" // available values: 'hash', 'history'
-      // vueRouterBase,
-      // vueDevtools,
-
+      vueRouterMode: "hash",
       publicPath: '/',
       define: {
         'process.env.API_URL': process.env.API_URL || 'http://localhost:800[21D[K
@@ -72,6 +67,7 @@ API_URL pointing to process.env.API_URL || 'http://localhost:8000'
       // vitePlugins: [
       //   [ 'package-name', { ..pluginOptions.. }, { server: true, client:[7D[K
 client:[7D[K
+client:[7D[K
 client: true } ]
       // ]
     },
@@ -79,124 +75,57 @@ client: true } ]
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
       // https: true,
-      host: '0.0.0.0', // Exposes the server to traffic outside the contain[7D[K
-contain[7D[K
-container (Docker host)
+      host: '0.0.0.0',
       port: 9000,
-      open: false      // Stops the container from attempting to open a bro[3D[K
-bro[3D[K
-browser tab headlessly
+      open: false
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
     framework: {
       config: {},
 
-      // iconSet: 'material-icons', // Quasar icon set
-      // lang: 'en-US', // Quasar language pack
+      iconSet: 'material-icons', // Quasar icon set
+      lang: 'en-US', // Quasar language pack
 
-      // For special cases outside of where the auto-import strategy can ha[2D[K
-ha[2D[K
-have an impact
-      // (like functional components as one of the examples),
-      // you can manually specify Quasar components/directives to be availa[6D[K
-availa[6D[K
-available everywhere:
-      //
-      // components: [],
-      // directives: [],
+      components: [],
+      directives: [],
 
-      // Quasar plugins
       plugins: []
     },
 
-    // animations: 'all', // --- includes all animations
-    // https://v2.quasar.dev/options/animations
     animations: [],
 
-    // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles[68D[K
-https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles[68D[K
-https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#sourcefiles
-    // [K
+    sou[3D[K
 sourceFiles: {
-    //   rootComponent: 'src/App.vue',
-    //   router: 'src/router/index',
-    //   store: 'src/store/index',
-    //   pwaRegisterServiceWorker: 'src-pwa/register-sw',
-    //   pwaServiceWorker: 'src-pwa/sw/custom-sw',
-    //   pwaManifestFile: 'src-pwa/manifest.json',
-    //   electronMain: 'src-electron/electron-main',
-    //   electronPreload: 'src-electron/electron-preload'
-    //   bexManifestFile: 'src-bex/manifest.json
-    // },
+      rootComponent: 'src/App.vue',
+      router: 'src/router/index',
+      store: 'src/store/index',
+      pwaRegisterServiceWorker: 'src-pwa/register-sw',
+      pwaServiceWorker: 'src-pwa/sw/custom-sw',
+      pwaManifestFile: 'src-pwa/manifest.json',
+      electronMain: 'src-electron/electron-main',
+      electronPreload: 'src-electron/electron-preload'
+    },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-ssr/configuring-ssr
     ssr[3D[K
 ssr: {
-      prodPort: 3000, // The default port that the production server should[6D[K
-should[6D[K
-should use
-      // (gets superseded if process.env.PORT is specified at runtime)
-
+      prodPort: 3000,
       middlewares: [
-        "render" // keep this as last one
+        "render"
       ],
 
-      // extendSSRPackageJson (pkgJson) {},
-      // extendSSRWebserverConf (rolldownConf) {},
-
-      // manualStoreSerialization: true,
-      // manualStoreSsrContextInjection: true,
-      // manualStoreHydration: true,
-      // manualPostHydrationTrigger: true,
+      extendSSRPackageJson (pkgJson) {},
+      extendSSRWebserverConf (rolldownConf) {},
 
       pwa: false
-      // pwaOfflineHtmlFilename: 'offline.html', // do NOT use index.html a[1D[K
-a[1D[K
-as name!
-
-      // extendSSRGenerateSWOptions (cfg) {},
-      // extendSSRInjectManifestOptions (cfg) {}
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
     pwa[3D[K
 pwa: {
-      workboxMode: "GenerateSW" // 'GenerateSW' or 'InjectManifest'
-      // swFilename: 'sw.js',
-      // manifestFilename: 'manifest.json',
-      // extendPWAManifestJson (json) {},
-      // useCredentialsForManifestTag: true,
-      // injectPWAMetaTags: false,
-      // extendPWACustomSWConf (rolldownConf) {},
-      // extendPWAGenerateSWOptions (cfg) {},
-      // extendPWAInjectManifestOptions (cfg) {},
-      // extendPWAInstallPrompt (promptEvent) {}
+      workboxMode: "GenerateSW"
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/[68D[K
-https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuhttps://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuhttps://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/onfigurittps://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/onfiguring-bex
     bex: {
-      // extendBexScriptsConf (rolldownConf) {},
-      // extendBexManifestJson (json) {},
-
-      /**
-       * The list of extra scripts (js/ts) not in your bex manifest that yo[2D[K
-yo[2D[K
-you want to
-       * compile and use in your browser extension. Maybe dynamic use them?[5D[K
-them?[5D[K
-them?
-       *
-       * Each entry in the list should be a relative filename to /src-bex/
-       *
-       * @example [ 'my-script.ts', 'sub-folder/my-other-script.js' ]
-       */
       extraScripts: []
     }
   };

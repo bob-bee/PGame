@@ -1,0 +1,2 @@
+Goal: Technical Narrative.
+Prompt: Act as a Senior Technical Architect. Analyze all files in the project. Create a docs/SYSTEM_ARCHITECTURE.md that explains how the ActivityPub federation module integrates with the core FastAPI app. Include a table of contents and a section explaining the "Agentic Pipeline" logic (referencing runAgent.py).

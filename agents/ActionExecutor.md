@@ -1,0 +1,2 @@
+Goal: Governance Enforcement.
+Prompt: Create a secure bridge between our SentimentSummaries data and external systems. If the consensus threshold is met, the system should trigger a POST request to an configured DisbursementAPI. Implement a strict "Two-Key" requirement: human verification is required before any API action is executed.

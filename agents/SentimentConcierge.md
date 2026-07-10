@@ -1,0 +1,2 @@
+Goal: Intelligence Extraction.
+Prompt: Act as an expert sentiment analyst. Read the content of Threads. Summarize the community discussion into a JSON structure: {"consensus_score": float, "top_contention_point": str, "community_sentiment": "positive/negative/neutral"}. Ensure the service uses a background task pattern in FastAPI so it doesn't block incoming requests.

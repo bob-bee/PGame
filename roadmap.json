@@ -1,0 +1,76 @@
+{
+  "tasks": [
+    {
+      "id": "action_executor",
+      "status": "done",
+      "target_path": "backend/app/core/action_executor.py",
+      "description": "Create a service that maps a 'Consensus Matrix' to automated smart-contract or API calls for budget disbursement."
+    },
+    {
+      "id": "simulation_engine",
+      "status": "done",
+      "target_path": "backend/app/services/simulator.py",
+      "description": "Build a module that takes the Consensus Matrix and runs 'What-If' scenarios against current treasury data to predict the impact of community decisions."
+    },
+    {
+      "id": "activitypub_federation",
+      "status": "done",
+      "target_path": "backend/app/api/federation.py",
+      "description": "Implement ActivityPub federation endpoints with unit tests mocking WebFinger responses."
+    },
+    {
+      "id": "deliberation_module",
+      "status": "done",
+      "target_path": "frontend/src/pages/DeliberationPage.vue",
+      "description": "Create DeliberationPage.vue with QSlider inputs and Vitest component tests verifying calculation logic."
+    },
+    {
+      "id": "security_audit",
+      "status": "done",
+      "target_path": "backend/app/core/security_check.py",
+      "description": "Implement request validation and rate limiting for all federation API endpoints."
+    },
+    {
+      "id": "sentiment_concierge",
+      "status": "done",
+      "target_path": "backend/app/services/concierge.py",
+      "description": "Develop the service to process incoming interaction threads and output a weighted Consensus Matrix."
+    },
+    {
+      "id": "documentation_generator",
+      "status": "done",
+      "target_path": "docs/SYSTEM_ARCHITECTURE.md",
+      "description": "Auto-generate the architecture documentation based on project file analysis."
+    },
+    {
+      "id": "testing_agent",
+      "status": "done",
+      "target_path": "tests/test_lifecycle.py",
+      "description": "Create a full-lifecycle test suite that runs integration tests across the backend and frontend components."
+    },
+    {
+      "id": "deployment_pipeline",
+      "status": "done",
+      "target_path": "docker/deploy.sh",
+      "description": "Configure multi-stage Docker builds for the full stack and automate deployment to a local K3s cluster."
+    },
+    {
+      "id": "federation_gateway",
+      "status": "done",
+      "target_path": "backend/app/api/gateway.py",
+      "description": "Build an ingress controller to handle cross-instance message routing and signature verification for ActivityPub."
+    },
+    {
+      "id": "ui_dashboard_refactor",
+      "status": "done",
+      "target_path": "frontend/src/layouts/MainLayout.vue",
+      "description": "Refactor the UI layout to integrate real-time telemetry streaming from the simulation engine."
+    },
+    {
+      "id": "monitoring_agent",
+      "status": "done",
+      "target_path": "backend/app/core/monitor.py",
+      "description": "Develop a supervisor agent to log system health, model latency, and resource usage to the SQLite database."
+    }
+  ]
+}
